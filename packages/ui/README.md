@@ -5,11 +5,11 @@ plus SVG charts and a canvas entity graph. Only peer dependency: React 18+.
 
 ## Install
 
-From the built `ui-dist` branch of the (private) repo — uses your GitHub SSH access:
+From the built `ui-dist` branch of the (private) repo — needs GitHub access to the private repo; run `gh auth setup-git` once so git can use your gh login:
 
 ```bash
-npm i github:mukulvashisht1026/junction-kit#ui-dist          # latest
-npm i github:mukulvashisht1026/junction-kit#ui-v0.1.0        # pinned version
+npm i git+https://github.com/mukulvashisht1026/junction-kit.git#ui-dist          # latest
+npm i git+https://github.com/mukulvashisht1026/junction-kit.git#ui-v0.1.0        # pinned version
 ```
 
 Or from a local checkout: `npm i ../junction-kit/packages/ui` (run `npm run build:ui` in the checkout first).

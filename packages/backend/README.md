@@ -17,7 +17,7 @@ FastAPI building blocks for hackathons, importable as `junction_kit`:
 ## Install
 
 ```bash
-pip install "junction-kit-backend[all] @ git+ssh://git@github.com/mukulvashisht1026/junction-kit.git#subdirectory=packages/backend"
+pip install "junction-kit-backend[all] @ git+https://github.com/mukulvashisht1026/junction-kit.git#subdirectory=packages/backend"
 # pin a release:  ...junction-kit.git@v0.1.0#subdirectory=packages/backend
 ```
 

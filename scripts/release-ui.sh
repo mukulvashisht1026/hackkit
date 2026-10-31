@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Builds packages/ui and force-pushes just the installable package (package.json, dist, README) to the
 # `ui-dist` branch. npm cannot install from a subfolder of a git repo, so this branch is what other projects install:
-#   npm i github:<owner>/<repo>#ui-dist
+#   npm i git+https://github.com/<owner>/<repo>.git#ui-dist
 set -euo pipefail
 cd "$(dirname "$0")/.."
 REMOTE_URL="$(git remote get-url origin)"

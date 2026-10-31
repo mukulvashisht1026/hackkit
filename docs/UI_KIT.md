@@ -47,7 +47,7 @@ The live showcase (`apps/web/src/pages/DemoPage.tsx` and `DataSections.tsx`) use
 **In another project** (React 18+, any bundler — Vite, Next.js, webpack):
 
 ```bash
-npm i github:mukulvashisht1026/junction-kit#ui-dist      # private repo: needs your GitHub SSH access
+npm i git+https://github.com/mukulvashisht1026/junction-kit.git#ui-dist      # private repo: needs GitHub access (run `gh auth setup-git` once)
 ```
 
 Then import the stylesheet once at your app entry, and optionally add the fonts to your HTML head:

@@ -14,8 +14,8 @@ docs/              UI_KIT.md (component guide), partner playbooks, problem-state
 ## Use the packages in another project
 
 ```bash
-npm i github:mukulvashisht1026/junction-kit#ui-dist
-pip install "junction-kit-backend[all] @ git+ssh://git@github.com/mukulvashisht1026/junction-kit.git#subdirectory=packages/backend"
+npm i git+https://github.com/mukulvashisht1026/junction-kit.git#ui-dist
+pip install "junction-kit-backend[all] @ git+https://github.com/mukulvashisht1026/junction-kit.git#subdirectory=packages/backend"
 ```
 
 See `packages/ui/README.md` and `packages/backend/README.md`. After changing the UI package, run `make release-ui` to update the `ui-dist` branch.

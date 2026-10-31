@@ -29,7 +29,7 @@ Single test: `. .venv/bin/activate && cd packages/backend && python -m pytest te
 
 Frontend type-check + build: `npm run build` from the root (UI package, then `tsc --noEmit` + vite for apps/web). No linter configured.
 
-Other projects install the packages from GitHub: `npm i github:mukulvashisht1026/junction-kit#ui-dist` and `pip install "junction-kit-backend[all] @ git+ssh://git@github.com/mukulvashisht1026/junction-kit.git#subdirectory=packages/backend"`. Bump `version` in `packages/ui/package.json` / `packages/backend/pyproject.toml` when releasing.
+Other projects install the packages from GitHub: `npm i git+https://github.com/mukulvashisht1026/junction-kit.git#ui-dist` and `pip install "junction-kit-backend[all] @ git+https://github.com/mukulvashisht1026/junction-kit.git#subdirectory=packages/backend"`. Bump `version` in `packages/ui/package.json` / `packages/backend/pyproject.toml` when releasing.
 
 ## Architecture
 

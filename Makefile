@@ -15,6 +15,6 @@ build:
 	npm run build
 build-ui:
 	npm run build:ui
-# Push a built copy of packages/ui to the `ui-dist` branch so other projects can `npm i github:<owner>/<repo>#ui-dist`
+# Push a built copy of packages/ui to the `ui-dist` branch so other projects can `npm i git+https://github.com/<owner>/<repo>.git#ui-dist`
 release-ui:
 	./scripts/release-ui.sh
