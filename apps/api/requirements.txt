@@ -1,0 +1,4 @@
+uvicorn[standard]>=0.29
+pytest>=8.0
+# The backend building blocks are the local package; `make setup` installs it with:
+#   pip install -e "packages/backend[all,dev]"

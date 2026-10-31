@@ -1,0 +1,12 @@
+.venv/
+node_modules/
+dist/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.env
+data/*
+!data/.gitkeep
+.claude/settings.local.json
+.DS_Store
+*.tgz
