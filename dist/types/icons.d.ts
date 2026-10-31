@@ -1,0 +1,28 @@
+import { SVGProps } from "react";
+type IconProps = SVGProps<SVGSVGElement>;
+export declare const Icon: {
+    search: (props: IconProps) => import("react").JSX.Element;
+    send: (props: IconProps) => import("react").JSX.Element;
+    sparkle: (props: IconProps) => import("react").JSX.Element;
+    menu: (props: IconProps) => import("react").JSX.Element;
+    x: (props: IconProps) => import("react").JSX.Element;
+    check: (props: IconProps) => import("react").JSX.Element;
+    bell: (props: IconProps) => import("react").JSX.Element;
+    arrow: (props: IconProps) => import("react").JSX.Element;
+    upload: (props: IconProps) => import("react").JSX.Element;
+    bot: (props: IconProps) => import("react").JSX.Element;
+    plus: (props: IconProps) => import("react").JSX.Element;
+    chevron: (props: IconProps) => import("react").JSX.Element;
+    heart: (props: IconProps) => import("react").JSX.Element;
+    zap: (props: IconProps) => import("react").JSX.Element;
+    user: (props: IconProps) => import("react").JSX.Element;
+    mail: (props: IconProps) => import("react").JSX.Element;
+    cube: (props: IconProps) => import("react").JSX.Element;
+    chart: (props: IconProps) => import("react").JSX.Element;
+    info: (props: IconProps) => import("react").JSX.Element;
+    alert: (props: IconProps) => import("react").JSX.Element;
+    layers: (props: IconProps) => import("react").JSX.Element;
+    gamepad: (props: IconProps) => import("react").JSX.Element;
+    back: (props: IconProps) => import("react").JSX.Element;
+};
+export {};
