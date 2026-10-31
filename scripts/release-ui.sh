@@ -23,8 +23,8 @@ node -e '
 cd "$TMP"
 git init -q -b ui-dist
 git add -A
-git commit -q -m "@junction-kit/ui ${VERSION} (built from ${SRC_SHA})"
+git commit -q -m "@hackkit/ui ${VERSION} (built from ${SRC_SHA})"
 git push -f "$REMOTE_URL" ui-dist
 git tag -f "ui-v${VERSION}"
 git push -f "$REMOTE_URL" "ui-v${VERSION}"
-echo "Published @junction-kit/ui ${VERSION} to branch ui-dist and tag ui-v${VERSION}"
+echo "Published @hackkit/ui ${VERSION} to branch ui-dist and tag ui-v${VERSION}"

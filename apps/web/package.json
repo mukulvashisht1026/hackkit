@@ -12,7 +12,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "recharts": "^2.12.7",
-    "@junction-kit/ui": "0.1.0"
+    "@hackkit/ui": "0.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

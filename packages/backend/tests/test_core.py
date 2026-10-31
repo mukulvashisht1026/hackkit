@@ -2,9 +2,9 @@ import numpy as np
 import pandas as pd
 from fastapi.testclient import TestClient
 
-from junction_kit.analytics import anomaly
-from junction_kit.app import create_app
-from junction_kit.retrieval.store import DocStore, chunk_text
+from hackkit.analytics import anomaly
+from hackkit.app import create_app
+from hackkit.retrieval.store import DocStore, chunk_text
 
 client = TestClient(create_app())
 

@@ -2,7 +2,7 @@ import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import {
   Badge, BarChart, Button, Card, ChartCard, DonutChart, EntityGraph, GraphEdge, GraphEvent, GraphNode, Heatmap,
   Histogram, Icon, LineChart, ScatterChart, Section, Swatch, Tabs, Toggle, seriesColor, summarize, useReducedMotion, useToast,
-} from "@junction-kit/ui";
+} from "@hackkit/ui";
 
 /** Seeded PRNG so demo data is stable across reloads. */
 function rng(seed: number) {

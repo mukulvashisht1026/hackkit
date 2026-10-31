@@ -1,4 +1,4 @@
-# @junction-kit/ui — Lumen UI kit
+# @hackkit/ui — Lumen UI kit
 
 Themeable React components for hackathon builds: one markup, three skins (`dreamy`, `depth` 3D, `pixel` 8-bit),
 plus SVG charts and a canvas entity graph. Only peer dependency: React 18+.
@@ -8,17 +8,17 @@ plus SVG charts and a canvas entity graph. Only peer dependency: React 18+.
 From the built `ui-dist` branch of the (private) repo — needs GitHub access to the private repo; run `gh auth setup-git` once so git can use your gh login:
 
 ```bash
-npm i git+https://github.com/mukulvashisht1026/junction-kit.git#ui-dist          # latest
-npm i git+https://github.com/mukulvashisht1026/junction-kit.git#ui-v0.1.0        # pinned version
+npm i git+https://github.com/mukulvashisht1026/hackkit.git#ui-dist          # latest
+npm i git+https://github.com/mukulvashisht1026/hackkit.git#ui-v0.2.0        # pinned version
 ```
 
-Or from a local checkout: `npm i ../junction-kit/packages/ui` (run `npm run build:ui` in the checkout first).
+Or from a local checkout: `npm i ../hackkit/packages/ui` (run `npm run build:ui` in the checkout first).
 
 ## Use
 
 ```tsx
-import { Button, Hero, ThemeCtx, ToastProvider } from "@junction-kit/ui";
-import "@junction-kit/ui/styles.css"; // once, at your app entry
+import { Button, Hero, ThemeCtx, ToastProvider } from "@hackkit/ui";
+import "@hackkit/ui/styles.css"; // once, at your app entry
 
 export default function Page() {
   return (

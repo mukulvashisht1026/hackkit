@@ -8,7 +8,7 @@ A dependency-free React component kit for hackathon builds. One set of component
 | `depth` | Dark nebula, raised/recessed surfaces, real CSS 3D (tilt, orbit, extrusion) | `/#/demo/3d` |
 | `pixel` | Retro 8-bit game: square pixel frames, stepped motion, CRT scanlines, coins and levels | `/#/demo/pixel` |
 
-The kit is the `@junction-kit/ui` package in `packages/ui/` (source in `packages/ui/src/`). The only runtime dependency is React; 3D and animation are plain CSS, charts are SVG, the entity graph is a `<canvas>`.
+The kit is the `@hackkit/ui` package in `packages/ui/` (source in `packages/ui/src/`). The only runtime dependency is React; 3D and animation are plain CSS, charts are SVG, the entity graph is a `<canvas>`.
 
 The live showcase (`apps/web/src/pages/DemoPage.tsx` and `DataSections.tsx`) uses every component and is the best copy-paste reference after this guide.
 
@@ -47,13 +47,13 @@ The live showcase (`apps/web/src/pages/DemoPage.tsx` and `DataSections.tsx`) use
 **In another project** (React 18+, any bundler — Vite, Next.js, webpack):
 
 ```bash
-npm i git+https://github.com/mukulvashisht1026/junction-kit.git#ui-dist      # private repo: needs GitHub access (run `gh auth setup-git` once)
+npm i git+https://github.com/mukulvashisht1026/hackkit.git#ui-dist      # private repo: needs GitHub access (run `gh auth setup-git` once)
 ```
 
 Then import the stylesheet once at your app entry, and optionally add the fonts to your HTML head:
 
 ```tsx
-import "@junction-kit/ui/styles.css";
+import "@hackkit/ui/styles.css";
 ```
 
 ```html
@@ -81,7 +81,7 @@ Every page built with the kit needs three wrappers, in this order:
 
 ```tsx
 // apps/web/src/pages/MyPage.tsx
-import { Background, Button, Card, Hero, Navbar, Logo, Section, ThemeCtx, ToastProvider, useToast } from "@junction-kit/ui";
+import { Background, Button, Card, Hero, Navbar, Logo, Section, ThemeCtx, ToastProvider, useToast } from "@hackkit/ui";
 
 export default function MyPage() {
   const theme = "dreamy"; // or "depth" | "pixel"
@@ -124,7 +124,7 @@ and link to it with `<a href="#/my-page">`.
 Import everything from the package root:
 
 ```tsx
-import { Button, Chat, LineChart, Icon } from "@junction-kit/ui";
+import { Button, Chat, LineChart, Icon } from "@hackkit/ui";
 ```
 
 ---
@@ -177,7 +177,7 @@ const [theme, setTheme] = useState<UITheme>("dreamy");
   - `false` — force them off (class `is-still`).
 
 ```tsx
-import { MotionCtx, motionClass, cx } from "@junction-kit/ui";
+import { MotionCtx, motionClass, cx } from "@hackkit/ui";
 
 const [motion, setMotion] = useState<boolean | undefined>(undefined);
 <MotionCtx.Provider value={motion}>
@@ -816,7 +816,7 @@ The pixel skin works with every component automatically. These extras add the ga
 Pixel art from strings: one character per pixel, `.` is transparent, letters map to a palette.
 
 ```tsx
-import { Sprite, COIN, HEART, ROBOT, STAR } from "@junction-kit/ui";
+import { Sprite, COIN, HEART, ROBOT, STAR } from "@hackkit/ui";
 
 <Sprite art={COIN} scale={4} title="Coin" />
 <Sprite art={["..RR..", ".RRRR.", "RRRRRR"]} scale={6} colors={{ R: "#ef7d57" }} />
@@ -1041,7 +1041,7 @@ Edit the token block for the theme at the top of `packages/ui/src/ui.css` (`.ui-
 
 ## 19. Gotchas
 
-- **Nothing styled?** The component isn't inside a `.ui ui-<theme>` element, the class and `ThemeCtx` disagree, or (outside this repo) you forgot `import "@junction-kit/ui/styles.css"`.
+- **Nothing styled?** The component isn't inside a `.ui ui-<theme>` element, the class and `ThemeCtx` disagree, or (outside this repo) you forgot `import "@hackkit/ui/styles.css"`.
 - **`useToast` does nothing** — it's outside `ToastProvider`. Achievement toasts need `ToastProvider` above `GameLayer`.
 - **Plain `<button>`s look like the old starter app** — the starter's `styles.css` styles bare buttons and inputs. Use `Button`, or give elements a kit class (`ui-chip`, `ui-icon-btn`, `ui-input`).
 - **Search dropdown hidden behind the next card** — add `className="ui-raise"` to the card containing the `SearchBar`.

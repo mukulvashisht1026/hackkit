@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from .api import router as generic_router
 
 
-def create_app(title: str = "Junction starter API", routers: Iterable[APIRouter] = (), prefix: str = "/api",
+def create_app(title: str = "Hackkit API", routers: Iterable[APIRouter] = (), prefix: str = "/api",
                cors_origins: Iterable[str] = ("*",)) -> FastAPI:
     app = FastAPI(title=title)
     app.add_middleware(CORSMiddleware, allow_origins=list(cors_origins), allow_methods=["*"], allow_headers=["*"])

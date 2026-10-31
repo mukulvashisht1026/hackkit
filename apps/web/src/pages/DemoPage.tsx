@@ -6,7 +6,7 @@ import {
   Field, FileDrop, Footer, Hero, Icon, Logo, Marquee, Modal, Navbar, Progress, ProgressRing, SearchBar, SearchItem,
   MotionCtx, Section, Select, Skeleton, Slider, Spinner, StatCard, Stepper, Tabs, TextArea, ThemeCtx, Toggle, ToastProvider,
   GameLayer, PixelHUD, Tooltip, UITheme, cx, motionClass, prefersReducedMotion, useToast,
-} from "@junction-kit/ui";
+} from "@hackkit/ui";
 
 const SECTIONS: [string, string][] = [
   ["buttons", "Buttons"], ["chat", "Chat"], ["forms", "Forms"], ["cards", "Cards"], ["graph", "Graph"], ["charts", "Charts"],
@@ -126,7 +126,7 @@ function Showcase({ theme, motion, setMotion }: { theme: UITheme; motion: boolea
         <AnalyticsSection />
 
         <Footer>
-          <span style={{ display: "inline-flex", alignItems: "center", gap: 10 }}><Logo /> Lumen UI · built for Junction</span>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: 10 }}><Logo /> Lumen UI · built for hackathons</span>
           <span className="ui-row">
             <a className="ui-dock-link" href="#/">Starter app</a>
             <button type="button" className="ui-dock-link" style={{ border: 0, background: "none", cursor: "pointer", font: "inherit" }}

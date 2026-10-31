@@ -1,6 +1,6 @@
 {
-  "name": "@junction-kit/ui",
-  "version": "0.1.0",
+  "name": "@hackkit/ui",
+  "version": "0.2.0",
   "description": "Lumen UI kit: themeable React components (dreamy, 3D, pixel), SVG charts and a canvas entity graph for hackathon builds",
   "type": "module",
   "main": "./dist/index.js",

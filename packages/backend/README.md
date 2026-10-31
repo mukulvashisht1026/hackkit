@@ -1,24 +1,24 @@
-# junction-kit-backend
+# hackkit-backend
 
-FastAPI building blocks for hackathons, importable as `junction_kit`:
+FastAPI building blocks for hackathons, importable as `hackkit`:
 
 | Module | What it gives you |
 |---|---|
-| `junction_kit.app` | `create_app(routers=[...])` — FastAPI app with CORS and the generic `/api` routes |
-| `junction_kit.api` | the generic router: `/health`, `/llm`, `/ingest/file`, `/ingest/url`, `/ask`, `/tables/{name}`, `/tables/sql`, `/anomaly`, `/search/exa` |
-| `junction_kit.core.llm` | `ask()`, `ask_structured(prompt, PydanticModel)` — Anthropic or any OpenAI-compatible endpoint, retries, disk cache |
-| `junction_kit.core.evidence` | `Evidenced[T]`, `Scored` — value + source + quote + confidence |
-| `junction_kit.ingest.loaders` | CSV/Excel/Parquet → DataFrame, PDF/PPTX/HTML/URL → text, `sql()` over DataFrames via DuckDB |
-| `junction_kit.ingest.partners` | Exa search, Context.dev scrape |
-| `junction_kit.retrieval` | `DocStore` (SQLite + TF-IDF, pluggable embedder), `answer_question()` with citations |
-| `junction_kit.analytics.anomaly` | robust z-score, EWMA, CUSUM, Fisher test with min-n guard, Benjamini-Hochberg, Isolation Forest, forecast |
-| `junction_kit.hardware.io` | serial, MQTT, fake sensor stream |
+| `hackkit.app` | `create_app(routers=[...])` — FastAPI app with CORS and the generic `/api` routes |
+| `hackkit.api` | the generic router: `/health`, `/llm`, `/ingest/file`, `/ingest/url`, `/ask`, `/tables/{name}`, `/tables/sql`, `/anomaly`, `/search/exa` |
+| `hackkit.core.llm` | `ask()`, `ask_structured(prompt, PydanticModel)` — Anthropic or any OpenAI-compatible endpoint, retries, disk cache |
+| `hackkit.core.evidence` | `Evidenced[T]`, `Scored` — value + source + quote + confidence |
+| `hackkit.ingest.loaders` | CSV/Excel/Parquet → DataFrame, PDF/PPTX/HTML/URL → text, `sql()` over DataFrames via DuckDB |
+| `hackkit.ingest.partners` | Exa search, Context.dev scrape |
+| `hackkit.retrieval` | `DocStore` (SQLite + TF-IDF, pluggable embedder), `answer_question()` with citations |
+| `hackkit.analytics.anomaly` | robust z-score, EWMA, CUSUM, Fisher test with min-n guard, Benjamini-Hochberg, Isolation Forest, forecast |
+| `hackkit.hardware.io` | serial, MQTT, fake sensor stream |
 
 ## Install
 
 ```bash
-pip install "junction-kit-backend[all] @ git+https://github.com/mukulvashisht1026/junction-kit.git#subdirectory=packages/backend"
-# pin a release:  ...junction-kit.git@v0.1.0#subdirectory=packages/backend
+pip install "hackkit-backend[all] @ git+https://github.com/mukulvashisht1026/hackkit.git#subdirectory=packages/backend"
+# pin a release:  ...hackkit.git@v0.2.0#subdirectory=packages/backend
 ```
 
 Extras: `llm` (anthropic, openai), `docs` (pypdf, python-pptx, openpyxl), `hardware` (pyserial, paho-mqtt), `server` (uvicorn), `all`, `dev` (pytest).
@@ -29,8 +29,8 @@ The core install is enough for analytics, retrieval and SQL; optional imports ar
 ```python
 # main.py
 from fastapi import APIRouter
-from junction_kit.app import create_app
-from junction_kit.core.llm import ask
+from hackkit.app import create_app
+from hackkit.core.llm import ask
 
 mine = APIRouter()
 

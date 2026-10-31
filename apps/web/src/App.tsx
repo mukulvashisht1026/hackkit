@@ -6,7 +6,7 @@ import AnomalyChart from "./components/AnomalyChart";
 export default function App() {
   return (
     <div className="wrap">
-      <h1>Junction starter</h1>
+      <h1>Hackkit starter</h1>
       <div className="sub">Upload data → ask questions with citations → query tables → spot anomalies. Replace panels with your challenge UI. · <a href="#/demo" style={{ color: "var(--acc)" }}>UI kit demo →</a></div>
       <div className="grid">
         <UploadPanel />

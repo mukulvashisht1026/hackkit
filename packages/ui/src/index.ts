@@ -1,6 +1,6 @@
 // Lumen UI kit. Wrap a page in <ThemeCtx.Provider value="dreamy" | "depth" | "pixel"> and a
 // <div className="ui ui-dreamy"> (or ui-depth / ui-pixel); every component reads tokens from that class.
-// Built consumers import the stylesheet themselves: import "@junction-kit/ui/styles.css".
+// Built consumers import the stylesheet themselves: import "@hackkit/ui/styles.css".
 import "./ui.css";
 
 export * from "./core";
